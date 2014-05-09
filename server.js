@@ -37,11 +37,11 @@ Instagram.set('maxSockets', 10);
  */
 Instagram.subscriptions.subscribe({
   object: 'tag',
-  object_id: 'lollapalooza',
+  object_id: 'pdx',
   aspect: 'media',
   callback_url: 'http://benniferfeed.azurewebsites.net/callback',
   type: 'subscription',
-  id: '#'
+  id: '4658394353534'
 });
 
 /**
@@ -49,28 +49,28 @@ Instagram.subscriptions.subscribe({
  * with the tag "hashtag" lollapalooza2013
  * @type {String}
  */
-Instagram.subscriptions.subscribe({
-  object: 'tag',
-  object_id: 'lollapalooza2013',
-  aspect: 'media',
-  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
-  type: 'subscription',
-  id: '#'
-});
+//Instagram.subscriptions.subscribe({
+//  object: 'tag',
+//  object_id: 'pdx',
+//  aspect: 'media',
+//  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
+//  type: 'subscription',
+//  id: '#'
+//});
 
 /**
  * Uses the library "instagram-node-lib" to Subscribe to the Instagram API Real Time
  * with the tag "hashtag" lolla2013
  * @type {String}
  */
-Instagram.subscriptions.subscribe({
-  object: 'tag',
-  object_id: 'lolla2013',
-  aspect: 'media',
-  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
-  type: 'subscription',
-  id: '#'
-});
+//Instagram.subscriptions.subscribe({
+//  object: 'tag',
+//  object_id: 'lolla2013',
+//  aspect: 'media',
+//  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
+//  type: 'subscription',
+//  id: '#'
+//});
 
 // if you want to unsubscribe to any hashtag you subscribe
 // just need to pass the ID Instagram send as response to you
