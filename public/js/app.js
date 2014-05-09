@@ -57,48 +57,55 @@
         /**
          * [Render the images on the page and check for layout resize]
          */
-        renderTemplate: function(data) {
-            var lastAnimate, lastSrc, nextSrc, last,
-                current = data.data[0].images.standard_resolution.url,
-                w = $(document).width();
+        renderTemplate: function ( data ) {
+            var lastAnimate, lastSrc, nextSrc, last;
 
-                var
-                    query = data,
-                    source = $('#mostRecent-tpl').html(),
-                    compiledTemplate = Handlebars.compile(source),
-                    result = compiledTemplate(query),
-                    imgWrap = $('#imgContent');
+            var current;
+            if(data) {
+                current = data.data[0].images.standard_resolution.url;
+            } else {
+                console.log("data undefined");
+            }
 
-                imgWrap.prepend(result);
+            var w = $( document ).width();
 
-                last = $('#imgContent a:first-child');
-                lastSrc = $('#imgContent a:first-child').find('img').attr('src');
-                nextSrc = $('#imgContent a:nth-child(2)').find('img').attr('src');
+            var
+                query = data,
+                source = $( '#mostRecent-tpl' ).html(),
+                compiledTemplate = Handlebars.compile( source ),
+                result = compiledTemplate( query ),
+                imgWrap = $( '#imgContent' );
 
-                if( lastSrc === nextSrc ) {
-                    last.remove();
+            imgWrap.prepend( result );
+
+            last = $( '#imgContent a:first-child' );
+            lastSrc = $( '#imgContent a:first-child' ).find( 'img' ).attr( 'src' );
+            nextSrc = $( '#imgContent a:nth-child(2)' ).find( 'img' ).attr( 'src' );
+
+            if ( lastSrc === nextSrc ) {
+                last.remove();
+            }
+
+            last = $( '#imgContent' ).find( ':first-child' ).removeClass( 'Hvh' );
+
+            if ( w >= 900 ) {
+                lastAnimate = $( '#imgContent' ).find( ':nth-child(2)' ).addClass( 'animated fadeInLeft' );
+            }
+
+            if ( w <= 900 ) {
+                lastAnimate = $( '#imgContent' ).find( ':nth-child(1)' ).addClass( 'animated fadeInDown' );
+            }
+
+            $( window ).resize( function () {
+                var w = $( document ).width();
+                if ( w >= 900 ) {
+                    lastAnimate = $( '#imgContent' ).find( ':nth-child(2)' ).addClass( 'animated fadeInLeft' );
                 }
 
-                last = $('#imgContent').find(':first-child').removeClass('Hvh');
-
-                if( w >= 900 ) {
-                    lastAnimate = $('#imgContent').find(':nth-child(2)').addClass('animated fadeInLeft');
+                if ( w <= 900 ) {
+                    lastAnimate = $( '#imgContent' ).find( ':nth-child(1)' ).addClass( 'animated fadeInDown' );
                 }
-
-                if( w <= 900 ) {
-                    lastAnimate = $('#imgContent').find(':nth-child(1)').addClass('animated fadeInDown');
-                }
-
-                $(window).resize(function() {
-                    var w = $(document).width();
-                    if( w >= 900 ) {
-                        lastAnimate = $('#imgContent').find(':nth-child(2)').addClass('animated fadeInLeft');
-                    }
-
-                    if( w <= 900 ) {
-                        lastAnimate = $('#imgContent').find(':nth-child(1)').addClass('animated fadeInDown');
-                    }
-                });
+            });
         },
 
         /**
