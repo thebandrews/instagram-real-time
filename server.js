@@ -18,16 +18,16 @@ var pub = __dirname + '/public',
  * Set the 'client ID' and the 'client secret' to use on Instagram
  * @type {String}
  */
-var clientID = 'YOUR_CLIENT_ID',
-    clientSecret = 'YOUR_CLIENT_SECRET';
+var clientID = '2b67522669c44c7bb7c40bcbd78880ca',
+    clientSecret = '8d1f55df2ae044c4a08aed44af894dc7';
 
 /**
  * Set the configuration
  */
 Instagram.set('client_id', clientID);
 Instagram.set('client_secret', clientSecret);
-Instagram.set('callback_url', 'http://YOUR_URL.com/callback');
-Instagram.set('redirect_uri', 'http://YOUR_URL.com');
+Instagram.set('callback_url', 'http://benniferfeed.azurewebsites.net/callback');
+Instagram.set('redirect_uri', 'http://benniferfeed.azurewebsites.net');
 Instagram.set('maxSockets', 10);
 
 /**
@@ -39,7 +39,7 @@ Instagram.subscriptions.subscribe({
   object: 'tag',
   object_id: 'lollapalooza',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
   type: 'subscription',
   id: '#'
 });
@@ -53,7 +53,7 @@ Instagram.subscriptions.subscribe({
   object: 'tag',
   object_id: 'lollapalooza2013',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
   type: 'subscription',
   id: '#'
 });
@@ -67,7 +67,7 @@ Instagram.subscriptions.subscribe({
   object: 'tag',
   object_id: 'lolla2013',
   aspect: 'media',
-  callback_url: 'http://YOUR_URL.com/callback',
+  callback_url: 'http://benniferfeed.azurewebsites.net/callback',
   type: 'subscription',
   id: '#'
 });
