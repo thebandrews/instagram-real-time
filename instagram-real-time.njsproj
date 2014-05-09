@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <SchemaVersion>2.0</SchemaVersion>
+        <ProjectGuid>{d3a33a00-4eb9-4324-8ba5-60bf7b3e376c}</ProjectGuid>
+        <ProjectHome />
+        <ProjectView>ShowAllFiles</ProjectView>
+        <StartupFile>server.js</StartupFile>
+        <WorkingDirectory>.</WorkingDirectory>
+        <OutputPath>.</OutputPath>
+        <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+        <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+        <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+    <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+    <ItemGroup>
+        <Content Include="package.json" />
+        <Content Include="README.md" />
+        <Compile Include="server.js" />
+        <Content Include="views\callback.html" />
+        <Content Include="views\index.html" />
+        <Content Include="public\css\app.css" />
+        <Content Include="public\css\app.min.css" />
+        <Content Include="public\images\bg-footer.png" />
+        <Content Include="public\images\bt-close.png" />
+        <Content Include="public\images\gh-logo.png" />
+        <Content Include="public\images\logo-square.png" />
+        <Content Include="public\images\logo.png" />
+        <Content Include="public\images\lolla_logo-2.png" />
+        <Content Include="public\images\sprite-social.png" />
+        <Content Include="public\images\bg.jpg" />
+        <Content Include="public\images\logo.jpg" />
+        <Content Include="public\images\mob-top-fill.jpg" />
+        <Content Include="public\images\old-logo.jpg" />
+        <Content Include="public\images\top-fill.jpg" />
+        <Content Include="public\images\favicon.ico" />
+        <Compile Include="public\js\app.js" />
+        <Compile Include="public\js\app.min.js" />
+        <Compile Include="public\js\handlebarsjs.1.0.min.js" />
+        <Compile Include="public\js\jquery.1.9.min.js" />
+        <Compile Include="public\js\socket.io.min.js" />
+        <Content Include="public\images\icons\ico-em.png" />
+        <Content Include="public\images\icons\ico-fb.png" />
+        <Content Include="public\images\icons\ico-g.png" />
+        <Content Include="public\images\icons\ico-tt.png" />
+    </ItemGroup>
+    <ItemGroup>
+        <Folder Include=".git" />
+        <Folder Include=".git\branches" />
+        <Folder Include=".git\hooks" />
+        <Folder Include=".git\info" />
+        <Folder Include=".git\logs" />
+        <Folder Include=".git\logs\refs" />
+        <Folder Include=".git\logs\refs\heads" />
+        <Folder Include=".git\logs\refs\remotes" />
+        <Folder Include=".git\logs\refs\remotes\origin" />
+        <Folder Include=".git\objects" />
+        <Folder Include=".git\objects\0c" />
+        <Folder Include=".git\objects\10" />
+        <Folder Include=".git\objects\12" />
+        <Folder Include=".git\objects\16" />
+        <Folder Include=".git\objects\20" />
+        <Folder Include=".git\objects\23" />
+        <Folder Include=".git\objects\24" />
+        <Folder Include=".git\objects\25" />
+        <Folder Include=".git\objects\27" />
+        <Folder Include=".git\objects\2c" />
+        <Folder Include=".git\objects\2e" />
+        <Folder Include=".git\objects\33" />
+        <Folder Include=".git\objects\36" />
+        <Folder Include=".git\objects\40" />
+        <Folder Include=".git\objects\45" />
+        <Folder Include=".git\objects\49" />
+        <Folder Include=".git\objects\4b" />
+        <Folder Include=".git\objects\4e" />
+        <Folder Include=".git\objects\4f" />
+        <Folder Include=".git\objects\50" />
+        <Folder Include=".git\objects\51" />
+        <Folder Include=".git\objects\55" />
+        <Folder Include=".git\objects\56" />
+        <Folder Include=".git\objects\57" />
+        <Folder Include=".git\objects\59" />
+        <Folder Include=".git\objects\5a" />
+        <Folder Include=".git\objects\5b" />
+        <Folder Include=".git\objects\5c" />
+        <Folder Include=".git\objects\63" />
+        <Folder Include=".git\objects\64" />
+        <Folder Include=".git\objects\65" />
+        <Folder Include=".git\objects\6e" />
+        <Folder Include=".git\objects\6f" />
+        <Folder Include=".git\objects\7a" />
+        <Folder Include=".git\objects\7f" />
+        <Folder Include=".git\objects\81" />
+        <Folder Include=".git\objects\82" />
+        <Folder Include=".git\objects\8a" />
+        <Folder Include=".git\objects\8b" />
+        <Folder Include=".git\objects\8f" />
+        <Folder Include=".git\objects\90" />
+        <Folder Include=".git\objects\91" />
+        <Folder Include=".git\objects\97" />
+        <Folder Include=".git\objects\9a" />
+        <Folder Include=".git\objects\9c" />
+        <Folder Include=".git\objects\9d" />
+        <Folder Include=".git\objects\9e" />
+        <Folder Include=".git\objects\a2" />
+        <Folder Include=".git\objects\a4" />
+        <Folder Include=".git\objects\a7" />
+        <Folder Include=".git\objects\a8" />
+        <Folder Include=".git\objects\a9" />
+        <Folder Include=".git\objects\b1" />
+        <Folder Include=".git\objects\b2" />
+        <Folder Include=".git\objects\b5" />
+        <Folder Include=".git\objects\b7" />
+        <Folder Include=".git\objects\c0" />
+        <Folder Include=".git\objects\c3" />
+        <Folder Include=".git\objects\c4" />
+        <Folder Include=".git\objects\c6" />
+        <Folder Include=".git\objects\c8" />
+        <Folder Include=".git\objects\cf" />
+        <Folder Include=".git\objects\d5" />
+        <Folder Include=".git\objects\d6" />
+        <Folder Include=".git\objects\e5" />
+        <Folder Include=".git\objects\ea" />
+        <Folder Include=".git\objects\ee" />
+        <Folder Include=".git\objects\f1" />
+        <Folder Include=".git\objects\f3" />
+        <Folder Include=".git\objects\f7" />
+        <Folder Include=".git\objects\f9" />
+        <Folder Include=".git\objects\fb" />
+        <Folder Include=".git\objects\ff" />
+        <Folder Include=".git\objects\info" />
+        <Folder Include=".git\objects\pack" />
+        <Folder Include=".git\refs" />
+        <Folder Include=".git\refs\heads" />
+        <Folder Include=".git\refs\remotes" />
+        <Folder Include=".git\refs\remotes\origin" />
+        <Folder Include=".git\refs\tags" />
+        <Folder Include="public" />
+        <Folder Include="public\css" />
+        <Folder Include="public\images" />
+        <Folder Include="public\images\icons" />
+        <Folder Include="public\js" />
+        <Folder Include="views" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+    <ProjectExtensions>
+        <VisualStudio>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+            <WebProjectProperties>
+              <UseIIS>False</UseIIS>
+              <AutoAssignPort>True</AutoAssignPort>
+              <DevelopmentServerPort>0</DevelopmentServerPort>
+              <DevelopmentServerVPath>/</DevelopmentServerVPath>
+              <IISUrl>http://localhost:48022/</IISUrl>
+              <NTLMAuthentication>False</NTLMAuthentication>
+              <UseCustomServer>True</UseCustomServer>
+              <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+              <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+            </WebProjectProperties>
+          </FlavorProperties>
+          <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+            <WebProjectProperties>
+              <StartPageUrl>
+              </StartPageUrl>
+              <StartAction>CurrentPage</StartAction>
+              <AspNetDebugging>True</AspNetDebugging>
+              <SilverlightDebugging>False</SilverlightDebugging>
+              <NativeDebugging>False</NativeDebugging>
+              <SQLDebugging>False</SQLDebugging>
+              <ExternalProgram>
+              </ExternalProgram>
+              <StartExternalURL>
+              </StartExternalURL>
+              <StartCmdLineArguments>
+              </StartCmdLineArguments>
+              <StartWorkingDirectory>
+              </StartWorkingDirectory>
+              <EnableENC>False</EnableENC>
+              <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+            </WebProjectProperties>
+          </FlavorProperties>
+        </VisualStudio>
+    </ProjectExtensions>
+</Project>
